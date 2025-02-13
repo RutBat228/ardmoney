@@ -12,7 +12,9 @@ echo '<div class="container-sm">';
 			<?
 if ($_COOKIE['first_auth'] != "new") {
 	setcookie('first_auth', "new", time() + 60 * 60 * 24 * 3650, '/');
-	red_index('hello.php');
+	//red_index('hello.php');
+    red_index('index.php');
+
 }
 if (isset($_GET['err'])) {
 	//ОШИБКА АВТОРИЗАЦИИ
